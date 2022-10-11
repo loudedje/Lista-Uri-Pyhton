@@ -1,0 +1,14 @@
+n=int(input())
+if n>=1:
+  resposta="0"
+if n>=2:
+  resposta=resposta+" 1"
+valoru=1
+valorp=0
+for i in range (2,n,1):
+  resposta=resposta + " " + str(valoru+valorp)
+  valorac=valorp+valoru
+  valorp=valoru
+  valoru=valorac
+
+print(resposta)
